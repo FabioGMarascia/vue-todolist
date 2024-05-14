@@ -16,10 +16,25 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
 		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-		<title>TEMPLATE</title>
+		<title>ToDo List</title>
 	</head>
 	<body>
-		<div id="app">{{ message }}</div>
+		<div id="app">
+			<div class="container">
+				<h1 :class="myH1Style">ToDO LIST</h1>
+				<div class="row justify-content-center">
+					<div class="col-4 deb">
+						<div class="row">
+							<div class="col-8 deb">
+								<ol>
+									<li v-for="toDo in toDoList" :class="myLiStyle">{{toDo}}</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script type="text/javascript" src="./js/script.js"></script>
 	</body>
 </html>
