@@ -22,7 +22,6 @@ createApp({
 			],
 			input: ``,
 			myH1Style: `text-center fw-bold display-3 text-warning my-4`,
-			myLiStyle: `fw-bold fs-5 list-group-item`,
 			myIconStyle: `d-inline-block position-absolute end-0 mt-1 me-2 text-danger fs-4`,
 			taskDone: `text-success`,
 			ongoingTask: `text-danger`,
