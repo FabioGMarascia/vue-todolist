@@ -42,11 +42,10 @@ createApp({
 			this.toDoList.splice(index, 1);
 		},
 		done(element) {
-			if (element.done == true) {
-				return this.taskDone;
-			} else {
-				return this.ongoingTask;
-			}
+			return element.done ? this.taskDone : this.ongoingTask;
+		},
+		changeToDo(element) {
+			element.done ? (element.done = false) : (element.done = true);
 		},
 	},
 	mounted() {},

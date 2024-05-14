@@ -30,7 +30,8 @@
 									<li
 										v-for="toDo, i in toDoList"
 										class="fw-bold fs-5 list-group-item"
-										:class="done(toDo)">
+										:class="done(toDo)"
+										@click="changeToDo(toDo)">
 										{{toDo.string}}
 										<i
 											class="fa-regular fa-rectangle-xmark"
