@@ -29,14 +29,16 @@
 								<ol class="list-group">
 									<li
 										v-for="toDo, i in toDoList"
-										class="fw-bold fs-5 list-group-item"
-										:class="done(toDo)"
-										@click="changeToDo(toDo)">
-										{{toDo.string}}
+										class="fw-bold fs-5 list-group-item row py-0"
+										:class="done(toDo)">
+										<div class="col-10 d-inline-block py-2" @click="changeToDo(toDo)">
+											{{toDo.string}}
+										</div>
 										<i
-											class="fa-regular fa-rectangle-xmark"
+											class="fa-regular fa-rectangle-xmark col-2"
 											:class="myIconStyle"
-											@click="deleteItem(i)"></i>
+											@click="deleteItem(i)">
+										</i>
 									</li>
 								</ol>
 							</div>

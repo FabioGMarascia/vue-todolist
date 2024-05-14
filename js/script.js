@@ -22,7 +22,7 @@ createApp({
 			],
 			input: ``,
 			myH1Style: `text-center fw-bold display-3 text-warning my-4`,
-			myIconStyle: `d-inline-block position-absolute end-0 mt-1 me-2 text-danger fs-4`,
+			myIconStyle: `d-inline-block position-absolute end-0 mt-2 text-danger fs-3`,
 			taskDone: `text-success`,
 			ongoingTask: `text-danger`,
 		};
