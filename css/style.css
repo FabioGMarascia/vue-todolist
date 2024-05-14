@@ -5,6 +5,10 @@ body {
 	font-family: sans-serif;
 }
 
+i {
+	cursor: pointer;
+}
+
 .deb {
 	border: 2px dashed blue;
 }

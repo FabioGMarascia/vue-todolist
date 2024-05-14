@@ -23,17 +23,23 @@
 			<div class="container">
 				<h1 :class="myH1Style">ToDO LIST</h1>
 				<div class="row justify-content-center">
-					<div class="col-4 deb">
+					<div class="col-4">
 						<div class="row">
-							<div class="col-10 deb">
-								<ol>
-									<li v-for="toDo in toDoList" :class="myLiStyle">{{toDo}}</li>
+							<div class="col-12 position-relative px-0">
+								<ol class="list-group">
+									<li v-for="toDo, i in toDoList" :class="myLiStyle">
+										{{toDo}}
+										<i
+											class="fa-regular fa-rectangle-xmark"
+											:class="myIconStyle"
+											@click="deleteItem(i)"></i>
+									</li>
 								</ol>
 							</div>
 						</div>
-						<div class="row">
-							<input class="col-10" type="text" v-model="addToDo" />
-							<button class="col-2" @click="addItem()">ADD</button>
+						<div class="row mt-2 justify-content-between">
+							<input class="col-8 rounded" type="text" v-model="addToDo" />
+							<button class="col-3 text-center rounded" @click="addItem()">ADD</button>
 						</div>
 					</div>
 				</div>
