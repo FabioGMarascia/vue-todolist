@@ -20,12 +20,14 @@
 	</head>
 	<body>
 		<div id="app">
-			<div class="container">
+			<div class="bg-warning">
 				<h1 :class="myH1Style">ToDO LIST</h1>
+			</div>
+			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-4">
 						<div class="row">
-							<div class="col-12 position-relative px-0">
+							<div class="col-12 position-relative px-0 mt-2">
 								<ol class="list-group">
 									<li
 										v-for="toDo, i in toDoList"
@@ -43,13 +45,20 @@
 								</ol>
 							</div>
 						</div>
-						<div class="row mt-2 justify-content-between">
+						<div class="row mt-3 justify-content-between">
 							<input
 								class="col-8 rounded"
 								type="text"
 								v-model="input"
 								@keyup.enter="addItem(input)" />
-							<button class="col-3 text-center rounded" @click="addItem(input)">ADD</button>
+							<button class="col-3 text-center rounded fw-bold" @click="addItem(input)">
+								ADD
+							</button>
+						</div>
+						<div class="row">
+							<button class="text-center rounded mt-3 fw-bold" @click="clearList()">
+								CLEAR LIST
+							</button>
 						</div>
 					</div>
 				</div>

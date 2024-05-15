@@ -21,7 +21,7 @@ createApp({
 				},
 			],
 			input: ``,
-			myH1Style: `text-center fw-bold display-3 text-warning my-4`,
+			myH1Style: `text-center fw-bold display-3 text-black py-3`,
 			myIconStyle: `d-inline-block position-absolute end-0 mt-2 text-danger fs-3`,
 			taskDone: `text-success`,
 			ongoingTask: `text-danger`,
@@ -45,6 +45,9 @@ createApp({
 		},
 		changeToDo(element) {
 			element.done ? (element.done = false) : (element.done = true);
+		},
+		clearList() {
+			this.toDoList.splice(0);
 		},
 	},
 	mounted() {},
