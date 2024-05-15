@@ -2,24 +2,7 @@ const { createApp } = Vue;
 createApp({
 	data() {
 		return {
-			toDoList: [
-				{
-					string: `Fare la spesa`,
-					done: true,
-				},
-				{
-					string: `Guardare la partita`,
-					done: true,
-				},
-				{
-					string: `Pulizia della camera`,
-					done: true,
-				},
-				{
-					string: `Preparare la cena`,
-					done: true,
-				},
-			],
+			toDoList: [],
 			input: ``,
 			myH1Style: `text-center fw-bold display-3 text-black py-3`,
 			myIconStyle: `d-inline-block position-absolute end-0 mt-2 text-danger fs-3`,
