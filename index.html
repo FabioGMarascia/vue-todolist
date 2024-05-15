@@ -29,7 +29,7 @@
 								<ol class="list-group">
 									<li
 										v-for="toDo, i in toDoList"
-										class="fw-bold fs-5 list-group-item row py-0"
+										class="fw-bold fs-5 list-group-item row py-0 mx-0"
 										:class="done(toDo)">
 										<div class="col-10 d-inline-block py-2" @click="changeToDo(toDo)">
 											{{toDo.string}}
