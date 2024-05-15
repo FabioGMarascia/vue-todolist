@@ -44,7 +44,11 @@
 							</div>
 						</div>
 						<div class="row mt-2 justify-content-between">
-							<input class="col-8 rounded" type="text" v-model="input" />
+							<input
+								class="col-8 rounded"
+								type="text"
+								v-model="input"
+								@keyup.enter="addItem(input)" />
 							<button class="col-3 text-center rounded" @click="addItem(input)">ADD</button>
 						</div>
 					</div>
